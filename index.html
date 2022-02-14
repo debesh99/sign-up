@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Form Validation </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+
+        <form action="#" name='myForm' onsubmit="return FireOnSubmit()" method="post">
+
+            <input type="name" name="fname" id="name" placeholder="Username" required>
+            <p class="formError" id="xname"></p>
+
+            <input type="email" name="femail" id="email" placeholder="Email" required>
+            <p class="formError" id="xemail"></p>
+
+            <input type="text" name="fphone" id="phone" pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" placeholder="Mobile number" required>
+            <p class="formError" id="xphone"></p>
+
+            <input type="password" name="fpass" id="password" placeholder="Password" required>
+            <p class="formError" id="xpass"></p>
+
+            <input type="password" name="fc_pass" id="c_password" placeholder="Confirm Password" required>
+            <p class="formError" id="xc_pass"></p>
+
+            <button type="submit" id="btn">Submit</button>
+        </form>
+        <div class="icons fa-2x">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-beat-fade" id="fb"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram  fa-beat-fade" id="insta"></i></a>
+            <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest fa-beat-fade" id="pin"></i></a>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/e87f0ead2f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

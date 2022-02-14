@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: url(bg.jpg) no-repeat center center fixed;
+}
+
+.container {
+    width: 40vh;
+    border: 2px dashed red;
+    text-align: center;
+    padding: 3% 1.5% 0% 1.5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h1 {
+    margin: 5% 0;
+    color: whitesmoke;
+}
+
+.container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container input {
+    width: 100%;
+    margin: 3% 0;
+    padding: 5%;
+    border-radius: 21px;
+}
+
+.container input:hover {
+    border: 2px solid rgb(159, 211, 241);
+}
+
+#btn {
+    padding: 4% 10%;
+    margin-top: 5%;
+    border-radius: 8px;
+}
+
+#btn:hover {
+    background-color: rgba(48, 216, 48, 0.644);
+    color: white;
+}
+
+.formError {
+    color: red;
+}
+
+.icons {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.icons a {
+    margin: 10% 0;
+    color: rgba(180, 174, 174, 0.692);
+}
+
+#pin {
+    color: red;
+}
+
+#fb {
+    color: rgb(6, 117, 230);
+}
+
+#insta {
+    color: #e1306c;
+    ;
+}
